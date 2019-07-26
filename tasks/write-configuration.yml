@@ -40,7 +40,7 @@
 
 - name: write personal host file
   template:
-    src: "templates/host"
+    src: "host.j2"
     dest: "/etc/tinc/{{ tincvpn_network }}/hosts/{{ tincvpn_nodename }}"
     mode: "0644"
   vars:
